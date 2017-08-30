@@ -39,16 +39,36 @@ a.button:hover {
 .top-navigation {
 	float:right;
 	margin-right: 25px;
+	position: relative;
+	margin: 0px 5px 0 0;
 }
 /*select any elements with a class of top-navigation and find any li tags inside those*/
 .top-navigation li{
 	list-style: none;
 	display: inline-block;
 	text-align: right;
-	padding: 5px 10px 0 0;
+	padding: 0 8px 0 0;
 	vertical-align: bottom;
-	margin: 5px 5px 0 0;
 	font-size: 13px;
+}
+.top-navigation img {
+    opacity: .55;
+    color: #000;
+}
+.top-navigation button {
+    background-color: #4683ea;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+}
+button {
+    margin-right: 6px;
+    margin-top: 15px;
+    padding: 8px 10px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    background-color: #f4f4f4;
+    font-weight: bold;
 }
 /*select the font awesome standard class to change the icons*/
 .fa {
@@ -77,9 +97,9 @@ a.button:hover {
 .profile-img {
 	border-radius: 25px;
 	height: 32px;
-  width: 32px;
-  position: relative;
-  top: 9px;
+  	width: 32px;
+  	position: relative;
+  	top: 9px;
 }
 
 
@@ -99,13 +119,27 @@ a.button:hover {
 }
 /*select any elements with a class of search-box and then find any input tags inside*/
 .search-box input {
-	width: 600px;
+	-webkit-appearance: none;
+    width: 600px;
+    height: 40px;
+    border: 1px solid #f4f4f4;
+    border-radius: 1px;
+    box-shadow: 0 2px 2px rgb(203, 203, 203);
+    line-height: normal;
+    font: 16px Arial, sans-serif;
+    background: url(https://infogalactic.com/w/images/2/22/Google_microphone_logo.png);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 14px;
+    display: block;
+    margin: 0 auto;
+	/*width: 600px;
   margin: 0 auto;
   padding: 5px;
   border: 1px solid #d9d9d9;
   font-size: 16px;
   border-radius: 5px;
-  display: block;
+  display: block;*/
 }
 /*select any elements with a class of search-box and then find any input tags inside that are currently focused*/
 .search-box input:focus {
